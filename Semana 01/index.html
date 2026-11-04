@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog do Dev Iniciante</title>
+</head>
+<body>
+  <header>
+    <h1>Blog do Dev Iniciante</h1>
+    <nav>
+      <ul>
+        <li><a href="#artigo-html">Primeiros passos</a></li>
+        <li><a href="#artigo-semantica">Tags semânticas</a></li>
+        <li><a href="#inscricao">Inscrição</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article id="artigo-html">
+      <h2>Primeiros passos com HTML</h2>
+      <p>O HTML é a linguagem que dá estrutura a todas as páginas da web. Com ele a gente define títulos, parágrafos, imagens, links e formulários. Para começar basta um editor de texto e um navegador, e o resultado aparece na hora depois de salvar o arquivo.</p>
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='300'%3E%3Crect width='600' height='300' fill='%23cfe8ff'/%3E%3Ccircle cx='300' cy='150' r='80' fill='%234a90d9'/%3E%3C/svg%3E" alt="Ilustração azul representando uma página HTML" width="600" height="300">
+    </article>
+
+    <article id="artigo-semantica">
+      <h2>Por que usar tags semânticas</h2>
+      <p>Tags como header, nav, main, aside e footer deixam claro o papel de cada parte da página. Isso ajuda quem lê o código, os buscadores e também os leitores de tela usados por pessoas com deficiência visual.</p>
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='300'%3E%3Crect width='600' height='300' fill='%23d9f2d9'/%3E%3Crect x='200' y='80' width='200' height='140' fill='%234caf50'/%3E%3C/svg%3E" alt="Ilustração verde representando blocos de uma página organizada" width="600" height="300">
+    </article>
+  </main>
+
+  <aside id="inscricao">
+    <h2>Receba novidades do blog</h2>
+    <form method="get">
+      <fieldset>
+        <legend>Dados para inscrição</legend>
+
+        <p>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" minlength="3" pattern="[A-Za-zÀ-ÿ ]{3,}" title="Digite pelo menos 3 letras" required>
+        </p>
+
+        <p>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" name="idade" min="18" max="120" required>
+        </p>
+
+        <p>
+          <label for="assunto">Assunto de interesse:</label>
+          <select id="assunto" name="assunto">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+        </p>
+
+        <p>
+          <input type="checkbox" id="termos" name="termos" value="aceito" required>
+          <label for="termos">Aceito os termos</label>
+        </p>
+
+        <button type="submit">Inscrever-se</button>
+      </fieldset>
+    </form>
+  </aside>
+
+  <footer>
+    <p>&copy; 2026 Blog do Dev Iniciante. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
