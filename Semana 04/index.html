@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays, DOM e Eventos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 16px;
+    }
+
+    #lista li {
+      cursor: pointer;
+      margin-bottom: 4px;
+    }
+
+    .destaque {
+      background-color: #fff3a0;
+    }
+
+    .feito {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="titulo">Meu Blog</h1>
+
+  <p class="texto">Bem-vindo ao blog! Aqui eu registro o que estou aprendendo de JavaScript.</p>
+  <p class="texto">Hoje o assunto é manipulação de arrays e do DOM.</p>
+  <p class="texto">Abra o Console (F12) para ver os resultados.</p>
+
+  <h2>Minha lista</h2>
+  <ul id="lista">
+    <li>Ler o artigo</li>
+    <li>Comentar</li>
+    <li>Compartilhar</li>
+  </ul>
+
+  <form id="formulario">
+    <label for="tarefa">Nova tarefa:</label>
+    <input type="text" id="tarefa" name="tarefa">
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <h2>Interações</h2>
+  <p>
+    <button type="button" id="botao">Clique aqui</button>
+  </p>
+  <p>
+    <label for="nome">Seu nome:</label>
+    <input type="text" id="nome" name="nome">
+  </p>
+
+  <script src="app.js"></script>
+</body>
+</html>
